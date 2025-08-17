@@ -772,330 +772,173 @@ button:hover {
   border: 3px solid #00c4b3;  
 }
 
-    @media(max-width: 768px) {
-      .footer-container {
-        flex-direction: column;
-      }
-      .footer-bottom {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-      }
-         .copyright {
-    flex-direction: column; 
-    text-align: center;   
+   /* ✅ Mobile Responsive (for ≤ 767px screens) */
+@media (max-width: 767px) {
+
+  /* Footer */
+  .footer-container,
+  .footer-bottom,
+  .copyright {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .copyright {
     font-size: 10px;
   }
-
   .copyright p {
-    flex: 1 1 100%; 
     margin: 8px 0;
   }
-    }
 
-@media (max-width: 768px) {
+  /* FAQ Section */
   .faq-item > summary {
-    font-size: 22px;
-    padding: 18px 40px 18px 0;
+    font-size: 20px;
+    padding: 15px;
   }
   .faq-content {
     font-size: 15px;
   }
-}
 
-
-@media (max-width: 767px) {
+  /* Testimonials */
   .testimonial-section {
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
   }
   .testimonial-content {
     text-align: center;
   }
-  .preview-image img {
-    max-width: 90%;
+  .testimonial-overlay {
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+    right: auto;
+    padding: 15px;
   }
-}
+  .testimonial-image img {
+    border-radius: 6px;
+  }
 
-
-
-
-
-@media (max-width: 767px) {
-
+  /* Navbar */
   .godaddy-navbar {
     padding: 0.5rem;
   }
-
-  .navbar-nav.ms-auto {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
   .nav-link {
-    padding: 0.4rem 0.8rem;
     font-size: 14px;
+    padding: 0.4rem 0.8rem;
   }
-
   .search-input {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 5px;
   }
-  .search-button {
-    width: 100%;
-    border-radius: 8px;
-    padding: 12px;
-  }
-
-  .search-containers {
-    max-width: 100%;
-    margin: 10px auto;
-    margin-top: 10px;
-  }
+  .search-button,
   .search-buttons {
     width: 100%;
     padding: 12px;
+    border-radius: 8px;
+  }
+  .search-containers {
+    max-width: 100%;
+    margin: 10px auto;
   }
 
+  /* Hero Section */
   .hero-banner {
     width: 100%;
     height: auto;
+  }
+  .godaddy-hero {
+    height: auto;
+    padding: 20px 0;
+  }
+  .hero-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
   }
   .hero-content {
     top: 10%;
     max-width: 90%;
   }
   .headline {
-    font-size: 26px;
+    font-size: 24px;
     margin-top: 0;
   }
   .headline-small {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 14px;
   }
-
-  .card1, .card2, .card3 {
-    width: 100%;
-    margin: 10px 0;
-    height: auto;
-    margin-left: 0;
-    margin-top: 0;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .card-img-top {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-  }
-
-  .cards1, .cards2, .cards3 {
-    width: 100%;
-    margin: 10px 0;
-    margin-left: 0;
-    margin-right: 0;
-    height: auto;
-  }
-
-  .domain-box {
-    flex-direction: column;
-    max-width: 100%;
-    gap: 10px;
-  }
-  .domain-price {
-    margin-left: 0;
-    margin-top: 0;
-    text-align: left;
-  }
-  .price, .purchase-note {
-    margin-left: 0;
-  }
-
-  .slider img {
-    width: 250px;
-    height: 200px;
-  }
-
-
-  .quote {
-    font-size: 20px;
-  }
-
-  .products-title {
-    font-size: 14px;
-  }
-
-  .products-list li {
-    font-size: 14px;
-  }
-
-  .preview-image img {
-    max-width: 100%;
-    margin: 20px auto 0 auto;
-    display: block;
-  }
-
-  .cardss1, .cardss2, .cardss3, .cardss4, .card5 {
-    margin: 20px auto;
-    width: 90% !important;
-    height: auto;
-  }
-
-  .card-bodys img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  .card-content {
-    flex-direction: column;
-    align-items: center;
-    width: 90% !important;
-    height: auto !important;
-    margin-left: 0 !important;
-  }
-
-  .card-title {
-    font-size: 20px !important;
-    padding-top: 20px !important;
-  }
-
-  p[style*="font-size: 45px"] {
-    font-size: 26px !important;
-    margin-left: 0 !important;
-    text-align: center;
-  }
-
-  p[style*="font-size: 16px"] {
-    font-size: 14px !important;
-    text-align: center;
-  }
-
-  .btn.btn-primary {
-    display: block;
-    margin: 20px auto !important;
-    width: auto;
-  }
-
-  .testimonial-overlay {
-    width: 80%;
-    position: relative;
-    margin: 20px auto;
-    right: auto;
-    padding: 20px;
-  }
-
-  .testimonial-section {
-    padding: 0 10px; 
-  }
-
-  .testimonial-image img {
-    border-radius: 6px; 
-  }
-    .preview-image img {
-    max-width: 100%;
-    margin-top: 20px;
-    margin-left: 0;
-    display: block;
-    margin-right: auto;
-    margin-left: auto; 
-  }
-
-  .godaddy-hero {
-    height: auto;
-    padding: 20px 0;
-  }
-
-  .hero-container {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .hero-image {
-    flex: none;
-    margin-left: 0;
-    margin-top: 0;
-  }
-
   .hero-image img {
-    margin-left: 0;
     width: 100%;
     height: auto;
+    margin: 0 auto;
   }
-
   .hero-caption {
-    position: static;
-    margin-top: 8px;
     font-size: 12px;
+    margin-top: 10px;
   }
-
   .hero-text {
-    flex: none;
     padding: 0 15px;
   }
-
   .hero-text h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
-
   .hero-text p {
     font-size: 0.95rem;
   }
-
-  .hero-text .logo {
-    width: 120px;
-    margin-bottom: 15px;
-  }
-
   .hero-btn {
     padding: 10px 20px;
     font-size: 0.95rem;
   }
 
-   .contact-button {
-    bottom: 15px;  
-    right: 15px;    
+  /* Cards (General) */
+  .card1, .card2, .card3,
+  .cards1, .cards2, .cards3,
+  .cardss1, .cardss2, .cardss3, .cardss4, .card5 {
+    width: 90% !important;
+    margin: 15px auto !important;
+    height: auto !important;
+    display: block;
   }
-
-  .contact-button a {
-    font-size: 14px;   
-    padding: 7px 15px; 
-    border-width: 2px; 
-  }
-
-  .cardss1, 
-  .cardss2, 
-  .cardss3, 
-  .cardss4, 
-  .card5 {
-    margin: 15px auto !important;   
-    width: 90% !important;          
-    height: auto !important;        
-    display: block;                 
-  }
-
   .card-bodys img,
   .card-content img {
-    width: 100% !important;  
-    height: auto !important; 
+    width: 100% !important;
+    height: auto !important;
     border-radius: 12px;
   }
-
   .card-title {
-    font-size: 22px !important;   
-    padding: 20px !important;    
+    font-size: 20px !important;
+    padding: 20px !important;
     line-height: 1.4;
-  }
-
-  .card-content {
-    flex-direction: column;  
-    align-items: center;
     text-align: center;
   }
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+
+  /* Products & Slider */
+  .products-title, .products-list li {
+    font-size: 14px;
+  }
+  .slider img {
+    width: 250px;
+    height: 200px;
+  }
+
+  /* Contact Button */
+  .contact-button {
+    bottom: 15px;
+    right: 15px;
+  }
+  .contact-button a {
+    font-size: 14px;
+    padding: 7px 15px;
+    border-width: 2px;
+  }
 }
-
-
-
-   
